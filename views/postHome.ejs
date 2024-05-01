@@ -1,0 +1,16 @@
+<%- include("partials/createHeader") -%>
+
+
+
+  <h1 style="text-align:center;">DAILY JOURNAL</h1>
+
+
+  
+
+  <% blogPost.forEach(function (item){ %>
+    <h1><%= item.post.title %></h1>
+    <p><%= item.post.content.substring(0,200)+"..." %><a href="/posts/<%= item._id %>">Read More</a></p>
+  <% }) %> 
+
+
+<%- include("partials/footer") -%>

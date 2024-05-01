@@ -1,0 +1,1 @@
+res.render("post",{title:foundData.title,content:foundData.content});

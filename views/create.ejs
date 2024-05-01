@@ -1,0 +1,17 @@
+<%- include("partials/createHeader") -%>
+
+<div class="create">
+  <div class="create-form">
+    <form action="/create" method="post">
+        <label>Title</label><br> 
+        <input name="title" placeholder="Title" value=""><br>
+        <label >content</label><br>
+        <textarea name="content" value="" placeholder="Take a note..." rows="12" cols="30" ></textarea><br>
+        <button type="submit" >POST</button>
+
+      </form>
+             <a class="btn btn-dark btn-sm " href="/logout" role="button">Log Out</a> 
+  </div>
+</div>
+
+<%- include("partials/footer") -%> 
